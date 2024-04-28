@@ -16,6 +16,18 @@ tricep_movements = ["Pushdowns","Bar Pushdowns", "Dips","Weighted Dips","Skullcr
 bicep_movement_rand = random.choice(bicep_movements)
 tricep_movement_rand = random.choice(tricep_movements)
 
+#Shoulders Movements Definition
+side_delt_movements = ["Dumbbell Laterals", "Seated Dumbbell Laterals", "Cable Laterals", "One arm Cable Laterals", "Behind the Neck Laterals",
+                       "Chest Supported Y Raise", "Lying Y Raise", "Barbell Upright Row", "Dumbbell Upright Row","Cable Upright Row" ]
+front_delt_movements = ["High Incline Smith Press", "High Incline Barbell Press", "High Incline Dumbbell Press", "Plate Loaded Shoulder Press",
+                        "Machine Shoulder Press", "Barbell Press", "Dumbbell Press", "Arnold Press", "Seated Arnold Press"]
+rear_delt_movements = ["Bent Dumbbell Rear Delt Fly", "Reverse Pec Deck", "Chest Supported Dumbbell Rear Delt Fly","Cable Rear Fly", "Facepull", "Barbell Facepull",
+                       "Seated Facepull"]
+side_movement_rand = random.choice(side_delt_movements)
+front_movement_rand = random.choice(front_delt_movements)
+rear_movement_rand = random.choice(rear_delt_movements)
+
+
 
 #Rep Range Definition
 main_rep_range = ["3 x 5-8","3 x 6-10","3 x 8-12"]
@@ -26,6 +38,14 @@ secondary_rep_range_rand = random.choice(secondary_rep_range)
 
 #Your weekly workout
 print("Here is your day one routine: \n")
+
+print("Day 2 routine: \n")
+print(side_movement_rand,secondary_rep_range_rand)
+print(front_movement_rand,main_rep_range_rand)
+print(rear_movement_rand,secondary_rep_range_rand)
+print("\n")
+
+print("Day 3 routine: \n")
 print(chest_movement_rand,main_rep_range_rand)
 print(fly_movement_rand,secondary_rep_range_rand)
 print(bicep_movement_rand,secondary_rep_range_rand)
