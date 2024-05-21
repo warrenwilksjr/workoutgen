@@ -1,0 +1,1 @@
+hip_hinge_movements = ["RDL", "Stiff Leg Deadlift", "Dumbbell RDL", "Deadlift"]
